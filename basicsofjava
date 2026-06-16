@@ -1,0 +1,291 @@
+# Basics of Java (Theory)
+
+## What is Java?
+
+Java is a **high-level, object-oriented, platform-independent programming language**. It was developed by James Gosling and his team at Sun Microsystems in 1995. Today, Java is owned by Oracle Corporation.
+
+Java is used to develop:
+
+* Desktop applications
+* Web applications
+* Mobile applications (Android)
+* Enterprise software
+* Cloud-based applications
+
+---
+
+## Why Java is Popular
+
+1. **Platform Independent** – Java programs can run on any operating system that has a Java Virtual Machine (JVM).
+2. **Object-Oriented** – Everything revolves around classes and objects.
+3. **Secure** – Provides features like bytecode verification and security management.
+4. **Robust** – Strong error handling and memory management.
+5. **Portable** – Programs can be moved from one platform to another without modification.
+6. **Multithreaded** – Supports executing multiple tasks simultaneously.
+
+---
+
+## Java Architecture
+
+Java follows the principle:
+
+**Write Once, Run Anywhere (WORA)**
+
+### Components
+
+### 1. JDK (Java Development Kit)
+
+The complete package required for developing Java applications. It contains:
+
+* Compiler (`javac`)
+* JRE
+* Development tools
+
+### 2. JRE (Java Runtime Environment)
+
+Provides the environment needed to run Java programs.
+
+### 3. JVM (Java Virtual Machine)
+
+The JVM executes Java bytecode and enables platform independence.
+
+### Working Process
+
+1. Write Java source code (`.java` file).
+2. Compiler converts it into bytecode (`.class` file).
+3. JVM reads and executes the bytecode.
+
+---
+
+## Basic Concepts of Java
+
+### 1. Class
+
+A class is a blueprint or template for creating objects.
+
+Example:
+
+* Class: Student
+* Attributes: Name, Roll Number
+* Methods: Study, AttendClass
+
+### 2. Object
+
+An object is an instance of a class.
+
+Example:
+
+* Student1 and Student2 are objects of the Student class.
+
+### 3. Method
+
+A method is a block of code that performs a specific task.
+
+Example:
+
+* `calculateSalary()`
+* `displayDetails()`
+
+### 4. Variable
+
+A variable is a named memory location used to store data.
+
+Example:
+
+* Age
+* Name
+* Salary
+
+---
+
+## Data Types in Java
+
+### Primitive Data Types
+
+These store simple values directly.
+
+| Type    | Description         |
+| ------- | ------------------- |
+| byte    | Small integer       |
+| short   | Short integer       |
+| int     | Integer value       |
+| long    | Large integer       |
+| float   | Decimal value       |
+| double  | Large decimal value |
+| char    | Single character    |
+| boolean | True or False       |
+
+### Non-Primitive Data Types
+
+These store references to objects.
+
+Examples:
+
+* String
+* Arrays
+* Classes
+* Interfaces
+
+---
+
+## Operators
+
+Operators are symbols used to perform operations on data.
+
+### Types of Operators
+
+1. Arithmetic Operators (`+`, `-`, `*`, `/`, `%`)
+2. Relational Operators (`==`, `!=`, `>`, `<`)
+3. Logical Operators (`&&`, `||`, `!`)
+4. Assignment Operators (`=`, `+=`, `-=`)
+5. Increment/Decrement Operators (`++`, `--`)
+
+---
+
+## Control Statements
+
+Control statements determine the flow of execution.
+
+### Decision-Making Statements
+
+* `if`
+* `if-else`
+* `switch`
+
+### Looping Statements
+
+* `for`
+* `while`
+* `do-while`
+
+### Jump Statements
+
+* `break`
+* `continue`
+* `return`
+
+---
+
+## Object-Oriented Programming (OOP)
+
+Java is based on OOP principles.
+
+### 1. Encapsulation
+
+Wrapping data and methods into a single unit (class) and restricting direct access.
+
+### 2. Inheritance
+
+A class can acquire properties and behaviors of another class.
+
+Benefit:
+
+* Code reusability
+
+### 3. Polymorphism
+
+One method can perform different tasks depending on the context.
+
+Types:
+
+* Compile-time Polymorphism (Method Overloading)
+* Runtime Polymorphism (Method Overriding)
+
+### 4. Abstraction
+
+Showing only essential details and hiding implementation details.
+
+---
+
+## Exception Handling
+
+An exception is an event that interrupts normal program execution.
+
+Purpose:
+
+* Prevent program crashes
+* Handle errors gracefully
+
+Common exceptions:
+
+* ArithmeticException
+* NullPointerException
+* ArrayIndexOutOfBoundsException
+
+Java provides:
+
+* `try`
+* `catch`
+* `finally`
+* `throw`
+* `throws`
+
+---
+
+## Java Collections Framework
+
+The Collections Framework provides ready-made data structures for storing and manipulating data.
+
+Common collections:
+
+* ArrayList
+* LinkedList
+* HashSet
+* HashMap
+* TreeSet
+
+Benefits:
+
+* Dynamic storage
+* Efficient data handling
+* Easy searching and sorting
+
+---
+
+## Packages
+
+A package is a collection of related classes and interfaces.
+
+Benefits:
+
+* Organizes code
+* Avoids naming conflicts
+* Improves maintainability
+
+Example packages:
+
+* `java.lang`
+* `java.util`
+* `java.io`
+
+---
+
+## Multithreading
+
+Multithreading allows multiple threads to execute simultaneously within a program.
+
+Advantages:
+
+* Better performance
+* Efficient CPU utilization
+* Improved responsiveness
+
+---
+
+## Key Features of Java (Exam Theory)
+
+1. Simple
+2. Object-Oriented
+3. Platform Independent
+4. Secure
+5. Robust
+6. Portable
+7. Architecture Neutral
+8. Multithreaded
+9. Distributed
+10. High Performance
+11. Dynamic
+
+### One-Line Definition
+
+**Java is a high-level, object-oriented, platform-independent programming language that follows the "Write Once, Run Anywhere" principle through the use of the JVM.**
