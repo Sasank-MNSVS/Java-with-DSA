@@ -1,0 +1,211 @@
+Control Statements in Java
+Definition
+
+Control statements are statements that control the flow of execution of a program. They decide which statements should execute, how many times they should execute, and in what order.
+
+Java control statements are divided into three categories:
+
+Selection (Decision-Making) Statements
+Iteration (Looping) Statements
+Jump Statements
+1. Selection (Decision-Making) Statements
+
+These statements help the program choose between different paths based on conditions.
+
+a) if Statement
+
+The if statement executes a block of code only when a condition is true.
+
+Syntax
+if(condition) {
+    // code
+}
+Example
+int age = 20;
+
+if(age >= 18) {
+    System.out.println("Eligible to vote");
+}
+b) if-else Statement
+
+Used when there are two possible outcomes.
+
+Syntax
+if(condition) {
+    // code if true
+}
+else {
+    // code if false
+}
+Example
+int age = 16;
+
+if(age >= 18) {
+    System.out.println("Adult");
+}
+else {
+    System.out.println("Minor");
+}
+c) if-else-if Ladder
+
+Used when multiple conditions need to be checked.
+
+Syntax
+if(condition1) {
+    // code
+}
+else if(condition2) {
+    // code
+}
+else {
+    // code
+}
+Example
+int marks = 85;
+
+if(marks >= 90) {
+    System.out.println("Grade A");
+}
+else if(marks >= 75) {
+    System.out.println("Grade B");
+}
+else {
+    System.out.println("Grade C");
+}
+d) switch Statement
+
+Used to select one block of code from multiple options.
+
+Syntax
+switch(expression) {
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+Example
+int day = 2;
+
+switch(day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    default:
+        System.out.println("Invalid Day");
+}
+Advantages of switch
+Improves readability.
+Faster than multiple if-else statements in some cases.
+Easier to maintain when handling many options.
+2. Iteration (Looping) Statements
+
+Looping statements repeatedly execute a block of code until a condition becomes false.
+
+a) for Loop
+
+Used when the number of iterations is known.
+
+Syntax
+for(initialization; condition; update) {
+    // code
+}
+Example
+for(int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+b) while Loop
+
+Checks the condition before executing the loop body.
+
+Syntax
+while(condition) {
+    // code
+}
+Example
+int i = 1;
+
+while(i <= 5) {
+    System.out.println(i);
+    i++;
+}
+c) do-while Loop
+
+Executes the loop body at least once, then checks the condition.
+
+Syntax
+do {
+    // code
+}
+while(condition);
+Example
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+}
+while(i <= 5);
+Difference Between while and do-while
+while	do-while
+Condition checked first	Condition checked after execution
+May execute zero times	Executes at least once
+3. Jump Statements
+
+Jump statements transfer control from one part of the program to another.
+
+a) break Statement
+
+Terminates a loop or switch statement immediately.
+
+Example
+for(int i = 1; i <= 10; i++) {
+    if(i == 5)
+        break;
+
+    System.out.println(i);
+}
+Output
+1
+2
+3
+4
+b) continue Statement
+
+Skips the current iteration and moves to the next iteration.
+
+Example
+for(int i = 1; i <= 5; i++) {
+    if(i == 3)
+        continue;
+
+    System.out.println(i);
+}
+Output
+1
+2
+4
+5
+c) return Statement
+
+Ends the execution of a method and optionally returns a value.
+
+Example
+public int add(int a, int b) {
+    return a + b;
+}
+Summary
+Category	Statements
+Selection	if, if-else, if-else-if, switch
+Iteration	for, while, do-while
+Jump	break, continue, return
