@@ -1,0 +1,168 @@
+Operators in Java
+Definition
+
+Operators are special symbols used to perform operations on variables and values. They help in performing calculations, comparisons, logical operations, and assignments.
+
+Example:
+
+int a = 10;
+int b = 5;
+int sum = a + b;
+
+Here, + is an operator that adds two values.
+
+Types of Operators in Java
+1. Arithmetic Operators
+
+Arithmetic operators are used to perform mathematical calculations.
+
+Operator	Description	Example
++	Addition	a + b
+-	Subtraction	a - b
+*	Multiplication	a * b
+/	Division	a / b
+%	Modulus (Remainder)	a % b
+Example
+int a = 10, b = 3;
+
+System.out.println(a + b); // 13
+System.out.println(a - b); // 7
+System.out.println(a * b); // 30
+System.out.println(a / b); // 3
+System.out.println(a % b); // 1
+2. Relational (Comparison) Operators
+
+These operators compare two values and return true or false.
+
+Operator	Description
+==	Equal to
+!=	Not equal to
+>	Greater than
+<	Less than
+>=	Greater than or equal to
+<=	Less than or equal to
+Example
+int a = 10, b = 5;
+
+System.out.println(a > b);  // true
+System.out.println(a == b); // false
+3. Logical Operators
+
+Logical operators are used to combine multiple conditions.
+
+Operator	Description
+&&	Logical AND
+||	Logical OR
+!	Logical NOT
+Example
+int age = 20;
+
+System.out.println(age > 18 && age < 60);
+System.out.println(age > 18 || age < 10);
+System.out.println(!(age > 18));
+4. Assignment Operators
+
+Assignment operators assign values to variables.
+
+Operator	Example	Meaning
+=	a = 5	Assign value
++=	a += 2	a = a + 2
+-=	a -= 2	a = a - 2
+*=	a *= 2	a = a * 2
+/=	a /= 2	a = a / 2
+%=	a %= 2	a = a % 2
+Example
+int a = 10;
+
+a += 5;
+System.out.println(a); // 15
+5. Increment and Decrement Operators
+
+Used to increase or decrease a value by 1.
+
+Operator	Description
+++	Increment
+--	Decrement
+Example
+int a = 5;
+
+a++;
+System.out.println(a); // 6
+
+a--;
+System.out.println(a); // 5
+Types
+Pre-Increment
+++a;
+
+Value increases before use.
+
+Post-Increment
+a++;
+
+Value increases after use.
+
+6. Bitwise Operators
+
+Operate on binary bits.
+
+Operator	Description
+&	Bitwise AND
+|	Bitwise OR
+^	Bitwise XOR
+~	Bitwise NOT
+<<	Left Shift
+>>	Right Shift
+Example
+int a = 5;
+int b = 3;
+
+System.out.println(a & b);
+System.out.println(a | b);
+7. Conditional (Ternary) Operator
+
+A shorthand form of if-else.
+
+Syntax
+condition ? expression1 : expression2;
+Example
+int age = 20;
+
+String result = (age >= 18) ? "Adult" : "Minor";
+
+System.out.println(result);
+8. instanceof Operator
+
+Checks whether an object belongs to a particular class.
+
+Example
+String name = "Java";
+
+System.out.println(name instanceof String);
+Output
+true
+Operator Precedence (Highest to Lowest)
+() (Parentheses)
+++, --, !
+*, /, %
++, -
+<, >, <=, >=
+==, !=
+&&
+||
+=, +=, -=
+Advantages of Operators
+Simplify programming tasks.
+Reduce code length.
+Improve readability.
+Enable mathematical and logical operations.
+Summary
+Category	Operators
+Arithmetic	+, -, *, /, %
+Relational	==, !=, >, <, >=, <=
+Logical	&&, ||, !
+Assignment	=, +=, -=, *=, /=
+Increment/Decrement	++, --
+Bitwise	&, |, ^, ~, <<, >>
+Conditional	?:
+Special	instanceof
